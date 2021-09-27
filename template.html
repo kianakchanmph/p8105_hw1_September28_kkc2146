@@ -192,16 +192,16 @@ pre code {
 <pre><code>## # A tibble: 10 × 5
 ##          x norm_samp norm_samp_pos char_vector `y &lt;- factor(c(&quot;1&quot;, &quot;1&quot;, &quot;1&quot;, &quot;1…
 ##      &lt;dbl&gt;     &lt;dbl&gt; &lt;lgl&gt;         &lt;chr&gt;       &lt;fct&gt;                            
-##  1  0.338      0.191 TRUE          fall        1                                
-##  2  0.205     -0.196 FALSE         is          1                                
-##  3 -0.0487     1.49  TRUE          here        1                                
-##  4  0.662      1.73  TRUE          finally     1                                
-##  5 -0.160      0.547 TRUE          and         1                                
-##  6  1.44       1.03  TRUE          the         1                                
-##  7  1.21       1.73  TRUE          leaves      1                                
-##  8 -0.293      0.456 TRUE          will        1                                
-##  9  0.521     -0.979 FALSE         be          2                                
-## 10  1.22       1.21  TRUE          pretty      3</code></pre>
+##  1 -0.578      3.26  TRUE          fall        1                                
+##  2 -0.979      2.01  TRUE          is          1                                
+##  3  0.0569     0.922 TRUE          here        1                                
+##  4 -0.239      1.30  TRUE          finally     1                                
+##  5 -0.491      2.27  TRUE          and         1                                
+##  6 -0.399     -0.132 FALSE         the         1                                
+##  7 -0.491      1.43  TRUE          leaves      1                                
+##  8  0.361     -0.529 FALSE         will        1                                
+##  9  1.20       1.75  TRUE          be          2                                
+## 10 -0.927      1.00  TRUE          pretty      3</code></pre>
 </div>
 </div>
 <div id="hw-1-problem-2" class="section level1">
@@ -214,6 +214,8 @@ pre code {
 <pre><code>## [1] 344</code></pre>
 <pre class="r"><code>ncol(penguins)</code></pre>
 <pre><code>## [1] 8</code></pre>
+<pre class="r"><code>mean(pull(penguins, flipper_length_mm), na.rm = TRUE)</code></pre>
+<pre><code>## [1] 200.9152</code></pre>
 </div>
 
 

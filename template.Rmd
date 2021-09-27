@@ -42,3 +42,7 @@ nrow(penguins)
 ncol(penguins)
 ```
 
+```{r}
+mean(pull(penguins, flipper_length_mm), na.rm = TRUE)
+```
+
