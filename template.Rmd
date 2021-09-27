@@ -38,3 +38,7 @@ data("penguins", package = "palmerpenguins")
 nrow(penguins)
 ```
 
+```{r}
+ncol(penguins)
+```
+
