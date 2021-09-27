@@ -30,4 +30,9 @@ install.packages("palmerpenguins")
 
 library('palmerpenguins')
 
+```{r}
+data("penguins", package = "palmerpenguins")
+```
+
+
 
