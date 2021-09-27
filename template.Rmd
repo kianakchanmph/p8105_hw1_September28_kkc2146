@@ -45,4 +45,4 @@ ncol(penguins)
 ```{r}
 mean(pull(penguins, flipper_length_mm), na.rm = TRUE)
 ```
-
+### The data in this dataset includes species of penguins, island location, length of bill (in mm), depth of bill (in mm), flipper length (mm), body mass (g), sex, and year. The dataset consists of 344 rows and 8 columns. The mean flipper length is 200.91mm. 
