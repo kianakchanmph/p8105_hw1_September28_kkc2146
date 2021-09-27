@@ -22,3 +22,12 @@ tibble(
   y <- factor(c("1", "1", "1", "1", "1", "1", "1", "1", "2", "3"))
 )
 ```
+
+# HW 1 Problem 2 
+This problem focuses the use of inline R code, plotting, and the behavior of ggplot for variables of different types.
+
+install.packages("palmerpenguins")
+
+library('palmerpenguins')
+
+
