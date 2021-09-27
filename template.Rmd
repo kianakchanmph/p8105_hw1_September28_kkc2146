@@ -34,5 +34,7 @@ library('palmerpenguins')
 data("penguins", package = "palmerpenguins")
 ```
 
-
+```{r}
+nrow(penguins)
+```
 
