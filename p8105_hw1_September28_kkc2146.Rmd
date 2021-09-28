@@ -1,0 +1,60 @@
+---
+title: "p8105_hw1_September28_kkc2146"
+output: html_document
+---
+
+# HW1 Problem 1
+### The purpose of this HW problem is to emphasize variable types and introduce coercion, some awareness of how R treats numeric, character, and factor variables 
+
+The code chunk below creates a data frame comprised of: 
+* a random sample size of 10 from a standard normal distribution 
+* a logical vector indicating whether elements of the sample are greater than 0 
+* a character vector of length 10 
+* a factor vector of length 10, with 3 different factor "levels" 
+
+```{r Problem 1}
+library(tidyverse)
+tibble(
+  x = rnorm(10), 
+  norm_samp = rnorm(10, mean = 1),
+  norm_samp_pos = norm_samp > 0,
+  char_vector = (c("fall", "is", "here","finally","and", "the", "leaves", "will","be", "pretty")),
+  y <- factor(c("1", "1", "1", "1", "1", "1", "1", "1", "2", "3"))
+)
+```
+
+# HW 1 Problem 2 
+This problem focuses the use of inline R code, plotting, and the behavior of ggplot for variables of different types.
+
+install.packages("palmerpenguins")
+
+library('palmerpenguins')
+
+```{r}
+data("penguins", package = "palmerpenguins")
+```
+
+```{r}
+nrow(penguins)
+```
+
+```{r}
+ncol(penguins)
+```
+
+```{r}
+mean(pull(penguins, flipper_length_mm), na.rm = TRUE)
+```
+### The data in this dataset includes species of penguins, island location, length of bill (in mm), depth of bill (in mm), flipper length (mm), body mass (g), sex, and year. The dataset consists of 344 rows and 8 columns. The mean flipper length is 200.91mm. 
+
+##Make a scatterplot of flipper_length_mm (y) vs bill_length_mm (x); color points using the species variable (adding color = ... inside of aes in your ggplot code should help).
+
+```{r yx_scatter}
+ggplot(penguins, aes (x = bill_length_mm, y = flipper_length_mm, color = species)) + geom_point(alpha = 0.5, size = 2)
+```
+```{r}
+ggsave("scatter_plot.pdf", height = 4, width = 6)
+```
+
+
+
