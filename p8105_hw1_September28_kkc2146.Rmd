@@ -4,6 +4,7 @@ output: html_document
 ---
 
 # HW1 Problem 1
+
 ### The purpose of this HW problem is to emphasize variable types and introduce coercion, some awareness of how R treats numeric, character, and factor variables 
 
 The code chunk below creates a data frame comprised of: 
